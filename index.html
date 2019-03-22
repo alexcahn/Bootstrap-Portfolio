@@ -12,41 +12,35 @@
 </head>
 
 <body>
-  <div class="toptext">
-    <header>
-      <h1>About Me</h1>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+    <nav class="navbar navbar-expand-sm navbar-light bg-white">
+        <a class="navbar-brand" href="#">Alex Cahn</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">About Me</a>
+              <a class="nav-link" href="index.html">About </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link active" href="contact.html">Contact <span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div>
       </nav>
-    </header>
-    <div class="content">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2>About Me</h2>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="container">
+    <div class="container bg-white">
+        <div class="row">
+            <div class="col">
+              <h2>About Me</h2>
       <div class="row">
-        <div class="col-lg-5">
-          <img src="slack pic.jpg" alt="My Photo">
+        <div class="col">
+            <img src="slack pic.jpg" class="img-fluid" alt="Responsive image">
         </div>
-        <div class="col-lg-7">
+        <div class="col">
           <p>
             My name is Alex Cahn and I am originally from Irvine, California. I graduated from California State
             University,
@@ -75,6 +69,8 @@
           <p> Thank you for coming to my Portfolio!
 
           </p>
+          </div>
+          </div>
         </div>
       </div>
     </div>

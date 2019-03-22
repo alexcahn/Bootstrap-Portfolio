@@ -1,5 +1,5 @@
-html {
-  background-image: url("../white-waves.png");
+body {
+  background-image: url("white-waves.png");
   background-size: cover;
 }
 
@@ -23,7 +23,7 @@ img {
   float: left;
   padding: 0px 20px 20px 0px;
   margin: 0px 20px 0px 20px;
-  height: 300px;
+  height: 200px;
 }
 
 
@@ -41,8 +41,12 @@ header h1, header nav{
   display: inline-block;
 }
 
-header nav{
+header nav, nav a{
   float: right;
+}
+
+nav a:first-child {
+border-left: 0 none;
 }
 
 li {
@@ -64,15 +68,20 @@ li a:hover{
   background-color: #4aaaa5;
 }
 
-h1{
+.navbar-brand{
 background-color: #4aaaa5;
 color: #ffffff;
+font-weight: bold;
 font-family: Georgia, 'Times New Roman', Times, serif;
 text-align: center;
 padding: 10px;
 margin-bottom: 0px;
 left: auto;
 box-sizing: border-box;
+}
+
+nav {
+  margin-bottom: 25px;
 }
 
 /* End of Header and Nav Bar */
@@ -125,70 +134,25 @@ p {
   height: 300px;
 }
 
-/* Portfolio */
-
-.games p{
-  color: #ffffff;
-  width: 300px;
-  text-align: center;
-  padding: 0 0 20px;
-  float: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.games a{
-  text-decoration: none;
-  display: block;
-  background-color: #4aa;
-  width: 95%;
-  font-size: 1em;
-  color: #ffffff;
-  padding: 10px;
-  top: 45%;
-  position: relative;
-  font-weight: bold;
-}
-
-#hangman{
-  background-image: url("hangman.jpg");
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-}
-
-#rpggame{
- background-image: url("rpggame.jpg");
- height: 300px;
- background-repeat: no-repeat;
- background-position: 100% 100%;
-}
-
-#trivia{
-  background-image: url("trivia.jpg");
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-}
-
-#rutgers{
-  background-image: url("rutgers.jpg");
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-}
-
-#rockpaper{
-  background-image: url("rockpaperscissors.jpg");
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-  margin-bottom: 60px;
-}
 
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
+}
+
+/* portfolio */
+
+.card{
+  margin: 20px;
+  padding: 20px;
+}
+
+.card-title{
+  text-align: center;
+}
+
+.btn, .btn-primary{
+  display: flex;
+  justify-content: center;
 }
